@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Hyouka</title>
-    <link>http://example.org/post/</link>
+    <link>https://cjlmonster.github.io/post/</link>
     <description>Recent content in Posts on Hyouka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Apr 2021 10:37:50 +0800</lastBuildDate><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Apr 2021 10:37:50 +0800</lastBuildDate><atom:link href="https://cjlmonster.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First</title>
-      <link>http://example.org/post/first/</link>
+      <link>https://cjlmonster.github.io/post/first/</link>
       <pubDate>Thu, 22 Apr 2021 10:37:50 +0800</pubDate>
       
-      <guid>http://example.org/post/first/</guid>
+      <guid>https://cjlmonster.github.io/post/first/</guid>
       <description>Hyde Hyde is a brazen two-column hugo theme based on the Jekyll theme of the same name. It pairs a prominent sidebar with uncomplicated content.
 Contents  Hyde  Contents Installation  Quick Start Standard Installation   Options  Sidebar menu Sidebar description Sticky sidebar content Themes Reverse layout Disqus   Google Analytics Author Ported By License    Installation Quick Start To give you a running start this installation puts a fully configured starter repo into your Git account and sets it up in a content manager / CMS.</description>
     </item>
