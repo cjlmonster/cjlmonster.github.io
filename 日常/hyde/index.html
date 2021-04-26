@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html  xml:lang="zh-cn" lang="zh-cn" >
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+
+	<meta name="generator" content="Hugo 0.82.1" />
+
+	<title>Hyde主题使用教程 &middot; Cjlmonster</title>
+
+	<link rel="stylesheet" href="/css/mdui.min.css">
+	<link rel="stylesheet" href="/css/poole.css">
+	<link rel="stylesheet" href="/css/docs-v17.css">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+	<link rel="shortcut icon" href="/img/favicon.png">
+
+	<script src="/js/mdui.min.js"></script>
+	<script>var $ = mdui.$;</script>
+	<script src="/js/docs-v4.js"></script>
+
+</head><body
+    class="mdui-drawer-body-left mdui-appbar-with-toolbar
+     mdui-theme-primary-teal
+      mdui-theme-accent-deep-orange
+       mdui-theme-layout-auto"><header class="mdui-appbar mdui-appbar-fixed">
+  <div class="mdui-toolbar mdui-color-theme">
+    <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+      mdui-drawer="{target: &#39;#main-drawer&#39;, swipe: true}"><i class="mdui-icon material-icons">menu</i></span>
+    <a href="/" class="mdui-typo-headline mdui-hidden-xs" style="text-decoration: none;">Cjlmonster</a>
+
+    
+    <span onclick="window.history.go(-1)" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '返回'}">
+      <i class="mdui-icon material-icons">arrow_back</i>
+    </span>
+    
+
+
+    <div class="mdui-toolbar-spacer"></div>
+
+
+    <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+      mdui-dialog="{target: &#39;#dialog-docs-theme&#39;}" mdui-tooltip="{content: &#39;设置主题&#39;}"><i
+        class="mdui-icon material-icons">color_lens</i></span>
+  </div>
+</header>
+<div class="mdui-drawer" id="main-drawer">
+	<div class="mdui-list" style="margin-bottom: 76px;">
+		
+		<a href="/" class="mdui-list-item mdui-ripple">
+			<i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+			<div class="mdui-list-item-content">主页</div>
+		</a>
+		
+		<a href="/sections" class="mdui-list-item mdui-ripple">
+			<i class="mdui-list-item-icon mdui-icon material-icons">bookmark</i>
+			<div class="mdui-list-item-content">博客系列</div>
+		</a>
+		
+		<a href="/tags" class="mdui-list-item mdui-ripple">
+			<i class="mdui-list-item-icon mdui-icon material-icons">loyalty</i>
+			<div class="mdui-list-item-content">标签</div>
+		</a>
+		
+		<a href="/about" class="mdui-list-item mdui-ripple">
+			<i class="mdui-list-item-icon mdui-icon material-icons">brightness_auto</i>
+			<div class="mdui-list-item-content">关于我</div>
+		</a>
+		
+	</div>
+</div>
+<div class="mdui-container doc-container" style="height: auto !important;"><div>
+
+  <h1>Hyde主题使用教程</h1>
+
+  <p class="mdui-text-color-theme-secondary mdui-m-t-1 mdui-m-b-2">
+    <span class="mdui-m-r-1">2021-04-23</span>
+    <span class="mdui-m-r-1">约 515 字</span>
+    <span class="mdui-m-r-3">预计阅读 3 分钟</span>
+    <a href="/%e6%97%a5%e5%b8%b8" class="mdui-text-color-theme-a700 topic-tag">日常</a>
+  </p>
+  <style>
+    div#blog p {
+      font-size: 0.90rem;
+    }
+
+    div#blog ul li {
+      font-size: 0.85rem;
+    }
+
+    div#blog code {
+      font-size: 0.85rem;
+    }
+  </style>
+  <div id="blog"><p>Hyde is a brazen two-column <a href="https://gohugo.io">hugo</a> theme based on the <a href="http://jekyllrb.com">Jekyll</a> theme of the same name.
+It pairs a prominent sidebar with uncomplicated content.</p>
+<p><img src="https://f.cloud.github.com/assets/98681/1831228/42af6c6a-7384-11e3-98fb-e0b923ee0468.png" alt="Hyde screenshot"></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#installation">Installation</a>
+<ul>
+<li><a href="#quick-start">Quick Start</a></li>
+<li><a href="#standard-installation">Standard Installation</a></li>
+</ul>
+</li>
+<li><a href="#options">Options</a>
+<ul>
+<li><a href="#sidebar-menu">Sidebar menu</a></li>
+<li><a href="#sidebar-description">Sidebar description</a></li>
+<li><a href="#sticky-sidebar-content">Sticky sidebar content</a></li>
+<li><a href="#themes">Themes</a></li>
+<li><a href="#reverse-layout">Reverse layout</a></li>
+<li><a href="#disqus">Disqus</a></li>
+</ul>
+</li>
+<li><a href="#google-analytics">Google Analytics</a></li>
+<li><a href="#author">Author</a></li>
+<li><a href="#ported-by">Ported By</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<h3 id="quick-start">Quick Start</h3>
+<p>To give you a running start this installation puts a fully configured <a href="https://github.com/forestryio/hyde-hugo-starter">starter repo</a> into your Git account and sets it up in a content manager / CMS.</p>
+<p><em><a href="https://forestry.io">Forestry</a> Starter-Kit:</em></p>
+<p><a href="https://app.forestry.io/quick-start?repo=forestryio/hyde-hugo-starter&amp;provider=github&amp;engine=hugo&amp;version=0.49"><img src="https://assets.forestry.io/import-to-forestry.svg" alt="Import this project into Forestry"></a></p>
+<h3 id="standard-installation">Standard Installation</h3>
+<p>To install Hyde as your default theme, first install this repository in the <code>themes/</code> directory:</p>
+<pre><code>$ cd themes/
+$ git clone https://github.com/spf13/hyde.git
+</code></pre>
+<p>Second, specify <code>hyde</code> as your default theme in the <code>config.toml</code> file. Just add the line</p>
+<pre><code>theme = &quot;hyde&quot;
+</code></pre>
+<p>at the top of the file.</p>
+<h2 id="options">Options</h2>
+<p>Hyde includes some customizable options, typically applied via classes on the <code>&lt;body&gt;</code> element.</p>
+<h3 id="sidebar-menu">Sidebar menu</h3>
+<p>Create a list of nav links in the sidebar by assigning &ldquo;menu=main&rdquo; in the front matter, like so:</p>
+<p><strong>TOML</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hyde&#34;</span>
+
+[<span style="color:#a6e22e">Menus</span>]
+  <span style="color:#a6e22e">main</span> = [
+      {<span style="color:#a6e22e">Name</span> = <span style="color:#e6db74">&#34;Github&#34;</span>, <span style="color:#a6e22e">URL</span> = <span style="color:#e6db74">&#34;https://github.com/username/&#34;</span>},
+      {<span style="color:#a6e22e">Name</span> = <span style="color:#e6db74">&#34;LinkedIn&#34;</span>, <span style="color:#a6e22e">URL</span> = <span style="color:#e6db74">&#34;https://www.linkedin.com/in/username/&#34;</span>}
+  ]
+</code></pre></div><p><strong>YAML</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">theme</span>: <span style="color:#e6db74">&#34;hyde&#34;</span>
+
+<span style="color:#f92672">Menus</span>:
+  <span style="color:#f92672">main</span>:
+    - <span style="color:#f92672">Name</span>: <span style="color:#e6db74">&#34;Github&#34;</span>
+      <span style="color:#f92672">URL</span>: <span style="color:#e6db74">&#34;https://github.com/username/&#34;</span>
+    - <span style="color:#f92672">Name</span>: <span style="color:#e6db74">&#34;LinkedIn&#34;</span>
+      <span style="color:#f92672">URL</span>: <span style="color:#e6db74">&#34;https://www.linkedin.com/in/username/&#34;</span>
+</code></pre></div><h3 id="sidebar-description">Sidebar description</h3>
+<p>Customise the describe of your page using <code>description</code>, like so:</p>
+<p><strong>TOML</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hyde&#34;</span>
+
+[<span style="color:#a6e22e">params</span>]
+  <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;Your custom description&#34;</span>
+</code></pre></div><p><strong>YAML</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">theme</span>: <span style="color:#e6db74">&#34;hyde&#34;</span>
+
+<span style="color:#f92672">params</span>:
+  <span style="color:#ae81ff">description = &#34;Your custom description&#34;</span>
+</code></pre></div><h3 id="sticky-sidebar-content">Sticky sidebar content</h3>
+<p>By default Hyde ships with a sidebar that affixes it&rsquo;s content to the bottom of the sidebar. You can optionally disabled this by removing the <code>.sidebar-sticky</code> class from the sidebar&rsquo;s <code>.container</code>. Sidebar content will then normally flow from top to bottom.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- Default sidebar --&gt;</span>
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sidebar&#34;</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container sidebar-sticky&#34;</span>&gt;
+    ...
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+
+<span style="color:#75715e">&lt;!-- Modified sidebar --&gt;</span>
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sidebar&#34;</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+    ...
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><h3 id="themes">Themes</h3>
+<p>Hyde ships with eight optional themes based on the <a href="https://github.com/chriskempson/base16">base16 color scheme</a>. Apply a theme to change the color scheme (mostly applies to sidebar and links).</p>
+<p><img src="https://f.cloud.github.com/assets/98681/1831229/42b0b354-7384-11e3-8462-31b8df193fe5.png" alt="Hyde in red"></p>
+<p>There are eight themes available at this time.</p>
+<p><img src="https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png" alt="Hyde theme classes"></p>
+<p>To use a theme, add the <code>themeColor</code> variable under <code>params</code>, like so:</p>
+<p><strong>TOML</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hyde&#34;</span>
+
+[<span style="color:#a6e22e">params</span>]
+  <span style="color:#a6e22e">themeColor</span> = <span style="color:#e6db74">&#34;theme-base-09&#34;</span>
+</code></pre></div><p><strong>YAML</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">theme</span>: <span style="color:#e6db74">&#34;hyde&#34;</span>
+
+<span style="color:#f92672">params</span>:
+  <span style="color:#f92672">themeColor</span>: <span style="color:#e6db74">&#34;theme-base-09&#34;</span>
+</code></pre></div><p>To create your own theme, look to the Themes section of <a href="https://github.com/poole/hyde/blob/master/public/css/hyde.css">included CSS file</a>. Copy any existing theme (they&rsquo;re only a few lines of CSS), rename it, and change the provided colors.</p>
+<h3 id="reverse-layout">Reverse layout</h3>
+<p><img src="https://f.cloud.github.com/assets/98681/1831230/42b0d3ac-7384-11e3-8d54-2065afd03f9e.png" alt="Hyde with reverse layout"></p>
+<p>To reverse page orientation, add the <code>layoutReverse</code> variable under <code>params</code>, like so:</p>
+<p><strong>TOML</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hyde&#34;</span>
+
+[<span style="color:#a6e22e">params</span>]
+  <span style="color:#a6e22e">layoutReverse</span> = <span style="color:#66d9ef">true</span>
+</code></pre></div><p><strong>YAML</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">theme</span>: <span style="color:#e6db74">&#34;hyde&#34;</span>
+
+<span style="color:#f92672">params</span>:
+  <span style="color:#f92672">layoutReverse</span>: <span style="color:#66d9ef">true</span>
+</code></pre></div><h3 id="disqus">Disqus</h3>
+<p>You can optionally enable a comment system powered by Disqus for the posts. Simply add the variable <code>disqusShortname</code> to your config file.</p>
+<p><strong>TOML</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">disqusShortname</span> = <span style="color:#e6db74">&#34;spf13&#34;</span>
+</code></pre></div><p><strong>YAML</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">disqusShortname </span>: <span style="color:#ae81ff">spf13</span>
+</code></pre></div><blockquote>
+<p><strong>Note:</strong> Previous version 1.0 the Disqus shortname had to be defined inside the <code>[params]</code> block.</p>
+</blockquote>
+<h2 id="google-analytics">Google Analytics</h2>
+<p>Google Analytics can be enabled by assigning your tracking code to the <code>googleAnalytics</code> variable in the config file:</p>
+<p><strong>TOML</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#34;Your tracking code&#34;</span>
+</code></pre></div><p><strong>YAML</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">googleAnalytics</span>: <span style="color:#ae81ff">Your tracking code</span>
+</code></pre></div><h2 id="author">Author</h2>
+<p><strong>Mark Otto</strong></p>
+<ul>
+<li><a href="https://github.com/mdo">https://github.com/mdo</a></li>
+<li><a href="https://twitter.com/mdo">https://twitter.com/mdo</a></li>
+</ul>
+<h2 id="ported-by">Ported By</h2>
+<p><strong>Steve Francia</strong></p>
+<ul>
+<li><a href="https://github.com/spf13">https://github.com/spf13</a></li>
+<li><a href="https://twitter.com/spf13">https://twitter.com/spf13</a></li>
+</ul>
+<h2 id="license">License</h2>
+<p>Open sourced under the <a href="LICENSE.md">MIT license</a>.</p>
+<p>&lt;3</p>
+</div>
+
+  <div class="mdui-m-t-2">
+    
+    <a href="/tags/hyde" class="tag tag-color-0">
+      <i class="mdui-icon material-icons" style="margin-right: 3px; font-size: 1em;">loyalty</i>
+      Hyde
+    </a>
+    
+    <a href="/tags/%e4%b8%bb%e9%a2%98" class="tag tag-color-1">
+      <i class="mdui-icon material-icons" style="margin-right: 3px; font-size: 1em;">loyalty</i>
+      主题
+    </a>
+    
+  </div>
+
+  <div class="direct">
+    
+    <span></span>
+    
+    
+    <a href="/%E6%97%A5%E5%B8%B8/nichijo/" class="mdui-text-color-theme-text">
+      <span class="mdui-hidden-md-up">下一篇</span>
+      <span class="mdui-hidden-sm-down">Nichijo</span>
+      <i class="mdui-icon material-icons">chevron_right</i>
+    </a>
+    
+  </div>
+
+</div>
+
+<h2>评论</h2>
+<div>
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    
+    
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'cjlmonster';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+    </div>
+    
+<div class="mdui-dialog" id="dialog-docs-theme">
+	<div class="mdui-dialog-title">设置文档主题</div>
+	<div class="mdui-dialog-content">
+
+		<p class="mdui-typo-title">主题色</p>
+		<div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3">
+			<div class="mdui-col">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-layout" value="auto">
+					<i class="mdui-radio-icon"></i>
+					Auto
+				</label>
+			</div>
+			<div class="mdui-col">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-layout" value="light" checked="">
+					<i class="mdui-radio-icon"></i>
+					Light
+				</label>
+			</div>
+			<div class="mdui-col">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-layout" value="dark">
+					<i class="mdui-radio-icon"></i>
+					Dark
+				</label>
+			</div>
+		</div>
+
+		<p class="mdui-typo-title mdui-text-color-theme">主色</p>
+		<form class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3">
+			<div class="mdui-col mdui-text-color-amber">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="amber">
+					<i class="mdui-radio-icon"></i>
+					Amber
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-blue">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="blue">
+					<i class="mdui-radio-icon"></i>
+					Blue
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-blue-grey">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="blue-grey">
+					<i class="mdui-radio-icon"></i>
+					Blue Grey
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-brown">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="brown">
+					<i class="mdui-radio-icon"></i>
+					Brown
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-cyan">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="cyan">
+					<i class="mdui-radio-icon"></i>
+					Cyan
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-deep-orange">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="deep-orange">
+					<i class="mdui-radio-icon"></i>
+					Deep Orange
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-deep-purple">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="deep-purple">
+					<i class="mdui-radio-icon"></i>
+					Deep Purple
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-green">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="green">
+					<i class="mdui-radio-icon"></i>
+					Green
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-grey">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="grey">
+					<i class="mdui-radio-icon"></i>
+					Grey
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-indigo">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="indigo" checked="">
+					<i class="mdui-radio-icon"></i>
+					Indigo
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-light-blue">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="light-blue">
+					<i class="mdui-radio-icon"></i>
+					Light Blue
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-light-green">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="light-green">
+					<i class="mdui-radio-icon"></i>
+					Light Green
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-lime">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="lime">
+					<i class="mdui-radio-icon"></i>
+					Lime
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-orange">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="orange">
+					<i class="mdui-radio-icon"></i>
+					Orange
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-pink">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="pink">
+					<i class="mdui-radio-icon"></i>
+					Pink
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-purple">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="purple">
+					<i class="mdui-radio-icon"></i>
+					Purple
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-red">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="red">
+					<i class="mdui-radio-icon"></i>
+					Red
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-teal">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="teal">
+					<i class="mdui-radio-icon"></i>
+					Teal
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-yellow">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="yellow">
+					<i class="mdui-radio-icon"></i>
+					Yellow
+				</label>
+			</div>
+		</form>
+
+		<p class="mdui-typo-title mdui-text-color-theme-accent">强调色</p>
+		<form class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3">
+			<div class="mdui-col mdui-text-color-amber">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="amber">
+					<i class="mdui-radio-icon"></i>
+					Amber
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-blue">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="blue">
+					<i class="mdui-radio-icon"></i>
+					Blue
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-cyan">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="cyan">
+					<i class="mdui-radio-icon"></i>
+					Cyan
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-deep-orange">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="deep-orange">
+					<i class="mdui-radio-icon"></i>
+					Deep Orange
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-deep-purple">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="deep-purple">
+					<i class="mdui-radio-icon"></i>
+					Deep Purple
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-green">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="green">
+					<i class="mdui-radio-icon"></i>
+					Green
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-indigo">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="indigo">
+					<i class="mdui-radio-icon"></i>
+					Indigo
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-light-blue">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="light-blue">
+					<i class="mdui-radio-icon"></i>
+					Light Blue
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-light-green">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="light-green">
+					<i class="mdui-radio-icon"></i>
+					Light Green
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-lime">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="lime">
+					<i class="mdui-radio-icon"></i>
+					Lime
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-orange">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="orange">
+					<i class="mdui-radio-icon"></i>
+					Orange
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-pink">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="pink" checked="">
+					<i class="mdui-radio-icon"></i>
+					Pink
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-purple">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="purple">
+					<i class="mdui-radio-icon"></i>
+					Purple
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-red">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="red">
+					<i class="mdui-radio-icon"></i>
+					Red
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-teal">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="teal">
+					<i class="mdui-radio-icon"></i>
+					Teal
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-yellow">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="yellow">
+					<i class="mdui-radio-icon"></i>
+					Yellow
+				</label>
+			</div>
+		</form>
+
+	</div>
+	<div class="mdui-divider"></div>
+	<div class="mdui-dialog-actions">
+		<button class="mdui-btn mdui-ripple mdui-float-left" mdui-dialog-cancel="">恢复默认主题</button>
+		<button class="mdui-btn mdui-ripple" mdui-dialog-confirm="">ok</button>
+	</div>
+</div></body>
+
+</html>

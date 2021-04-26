@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html  xml:lang="zh-cn" lang="zh-cn" >
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+
+	<meta name="generator" content="Hugo 0.82.1" />
+
+	<title>Android自启动引导说明 &middot; Cjlmonster</title>
+
+	<link rel="stylesheet" href="/css/mdui.min.css">
+	<link rel="stylesheet" href="/css/poole.css">
+	<link rel="stylesheet" href="/css/docs-v17.css">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+	<link rel="shortcut icon" href="/img/favicon.png">
+
+	<script src="/js/mdui.min.js"></script>
+	<script>var $ = mdui.$;</script>
+	<script src="/js/docs-v4.js"></script>
+
+</head><body
+    class="mdui-drawer-body-left mdui-appbar-with-toolbar
+     mdui-theme-primary-teal
+      mdui-theme-accent-deep-orange
+       mdui-theme-layout-auto"><header class="mdui-appbar mdui-appbar-fixed">
+  <div class="mdui-toolbar mdui-color-theme">
+    <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+      mdui-drawer="{target: &#39;#main-drawer&#39;, swipe: true}"><i class="mdui-icon material-icons">menu</i></span>
+    <a href="/" class="mdui-typo-headline mdui-hidden-xs" style="text-decoration: none;">Cjlmonster</a>
+
+    
+    <span onclick="window.history.go(-1)" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '返回'}">
+      <i class="mdui-icon material-icons">arrow_back</i>
+    </span>
+    
+
+
+    <div class="mdui-toolbar-spacer"></div>
+
+
+    <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+      mdui-dialog="{target: &#39;#dialog-docs-theme&#39;}" mdui-tooltip="{content: &#39;设置主题&#39;}"><i
+        class="mdui-icon material-icons">color_lens</i></span>
+  </div>
+</header>
+<div class="mdui-drawer" id="main-drawer">
+	<div class="mdui-list" style="margin-bottom: 76px;">
+		
+		<a href="/" class="mdui-list-item mdui-ripple">
+			<i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+			<div class="mdui-list-item-content">主页</div>
+		</a>
+		
+		<a href="/sections" class="mdui-list-item mdui-ripple">
+			<i class="mdui-list-item-icon mdui-icon material-icons">bookmark</i>
+			<div class="mdui-list-item-content">博客系列</div>
+		</a>
+		
+		<a href="/tags" class="mdui-list-item mdui-ripple">
+			<i class="mdui-list-item-icon mdui-icon material-icons">loyalty</i>
+			<div class="mdui-list-item-content">标签</div>
+		</a>
+		
+		<a href="/about" class="mdui-list-item mdui-ripple">
+			<i class="mdui-list-item-icon mdui-icon material-icons">brightness_auto</i>
+			<div class="mdui-list-item-content">关于我</div>
+		</a>
+		
+	</div>
+</div>
+<div class="mdui-container doc-container" style="height: auto !important;"><div>
+
+  <h1>Android自启动引导说明</h1>
+
+  <p class="mdui-text-color-theme-secondary mdui-m-t-1 mdui-m-b-2">
+    <span class="mdui-m-r-1">2021-04-26</span>
+    <span class="mdui-m-r-1">约 51 字</span>
+    <span class="mdui-m-r-3">预计阅读 1 分钟</span>
+    <a href="/android" class="mdui-text-color-theme-a700 topic-tag">Android</a>
+  </p>
+  <style>
+    div#blog p {
+      font-size: 0.90rem;
+    }
+
+    div#blog ul li {
+      font-size: 0.85rem;
+    }
+
+    div#blog code {
+      font-size: 0.85rem;
+    }
+  </style>
+  <div id="blog"><p>       由于第三方系统为了省电处理，关闭应用的自启动操作，导致应用经常收不到推送的消息或不及时，所以为了提高第三方系统的推送及时性，这里建议用户按以下操作，对应自己手机的系统类别，手动开启本应用的自启动选项和相关有助于提高推送到达率的设置。</p>
+<hr>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="小米-miui-">小米【 MIUI 】</h3>
+<ul>
+<li>自启动管理：需要把应用加到【自启动管理】列表，否则杀进程或重新开机后进程无法开启</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/667575/1610076462337-5f61b984-2739-40e4-8b13-65066b55fa92.png#align=left&amp;display=inline&amp;height=700&amp;margin=%5Bobject%20Object%5D&amp;originHeight=700&amp;originWidth=400&amp;size=0&amp;status=done&amp;style=none&amp;width=400" alt=""></p>
+<ul>
+<li>权限开启：为了保证应用能在锁屏或后台有来电时，能弹出接听界面，需要开启后台弹出和锁屏显示等功能</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/667575/1610076462333-58742378-a2a3-4bd6-bb5a-c828e2d04c3c.png#align=left&amp;display=inline&amp;height=1400&amp;margin=%5Bobject%20Object%5D&amp;originHeight=1400&amp;originWidth=800&amp;size=0&amp;status=done&amp;style=none&amp;width=800" alt=""></p>
+<ul>
+<li>通知栏设置：应用默认都是显示通知栏通知，如果关闭，则收到通知也不会提示，按一下步骤开启</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/667575/1610076462342-16012931-7aa0-4643-afb4-441f70498127.png#align=left&amp;display=inline&amp;height=700&amp;margin=%5Bobject%20Object%5D&amp;originHeight=700&amp;originWidth=800&amp;size=0&amp;status=done&amp;style=none&amp;width=800" alt=""></p>
+<ul>
+<li>网络助手：可以手动禁止已安装的第三方程序访问 2G/3G 和 WIFI 的网络和设置以后新安装程序是否允许访问 2G/3G 和 WIFI 的网络，这里按步骤开启本应用的网络访问功能</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/667575/1610076462352-5b88f802-243c-4f64-ae27-483101607195.png#align=left&amp;display=inline&amp;height=700&amp;margin=%5Bobject%20Object%5D&amp;originHeight=700&amp;originWidth=800&amp;size=0&amp;status=done&amp;style=none&amp;width=800" alt=""></p>
+<ul>
+<li>MIUI 省电策略： 设置应用的省电模式为“无限制”或“智能限制后台运行”</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/667575/1610076462354-bc9aafdf-684b-445b-970a-0b1860b64fae.png#align=left&amp;display=inline&amp;height=700&amp;margin=%5Bobject%20Object%5D&amp;originHeight=700&amp;originWidth=800&amp;size=0&amp;status=done&amp;style=none&amp;width=800" alt="">
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="华为-emotion-">华为【 Emotion 】</h3>
+<ul>
+<li>自启动管理：需要把应用加到【自启动管理】列表，否则杀进程或重新开机后进程不会开启，只能手动开启应用，设置流程：手机桌面-&gt;手机管家-&gt;启动管理-&gt;选择本应用并关闭自动管理（旧版本emui是开启加入自启动列表）和开启手动管理里的各选项，具体如下图所示</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/667575/1610076462365-92b24759-bd57-4187-81d2-622b22798218.png#align=left&amp;display=inline&amp;height=3966&amp;margin=%5Bobject%20Object%5D&amp;originHeight=2100&amp;originWidth=800&amp;size=0&amp;status=done&amp;style=none&amp;width=1511" alt=""></p>
+<ul>
+<li>开启相应权限：进入应用设置点击“信任此应用或开启必要权限”</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/667575/1610076462675-f741c050-7ba5-4f26-ae25-a2ffc7e2464e.png#align=left&amp;display=inline&amp;height=1400&amp;margin=%5Bobject%20Object%5D&amp;originHeight=1400&amp;originWidth=800&amp;size=0&amp;status=done&amp;style=none&amp;width=800" alt=""></p>
+<ul>
+<li>后台应用保护：旧版本emui需要手动把应用加到此列表，否则设备进入睡眠后会自动杀掉应用进程，只有手动开启应用才能恢复运行，新版本emui建议关闭省电模式和超级省电，进入手机管家设置，下面提供新版的设置步骤</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/667575/1610076462360-35d8f0fa-f0c4-40b8-88ed-8bf4ae063905.png#align=left&amp;display=inline&amp;height=700&amp;margin=%5Bobject%20Object%5D&amp;originHeight=700&amp;originWidth=800&amp;size=0&amp;status=done&amp;style=none&amp;width=800" alt=""></p>
+<ul>
+<li>通知管理：设置允许通知、禁止。禁止应用则通知栏不会有任何提醒</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/667575/1610076462364-16d47155-ca37-42b9-89b4-a747ea3ea478.png#align=left&amp;display=inline&amp;height=700&amp;margin=%5Bobject%20Object%5D&amp;originHeight=700&amp;originWidth=800&amp;size=0&amp;status=done&amp;style=none&amp;width=800" alt="">
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="魅族-flyme-">魅族【 Flyme 】</h3>
+<ul>
+<li>自启动管理：需要把应用加到【自启动管理】列表，否则杀进程或重新开机后进程无法开启</li>
+<li>通知栏推送：关闭应用通知则收到消息不会有任何展示</li>
+<li>省电管理： 安全中心里设置省电模式，在【待机耗电管理】中允许应用待机时，保持允许，否则手机休眠或者应用闲置一段时间，无法正常接收消息。
+<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+</ul>
+<h3 id="vivo-funtouch-os-">VIVO【 Funtouch OS 】</h3>
+<ul>
+<li>自启动管理和相应权限开启：将应用加入自启动和开启锁屏显示，后天启动等权限</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/667575/1610076462479-9ed7aeda-721e-4415-8262-e3a69dc80e15.png#align=left&amp;display=inline&amp;height=1600&amp;margin=%5Bobject%20Object%5D&amp;originHeight=1600&amp;originWidth=800&amp;size=0&amp;status=done&amp;style=none&amp;width=800" alt=""></p>
+<ul>
+<li>允许通知：需要进入通知管理将本应用设置为允许通知，否则应用无法收到推送通知</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/667575/1610076462670-add9af0d-0347-41f5-8b11-94efbf7d2924.png#align=left&amp;display=inline&amp;height=800&amp;margin=%5Bobject%20Object%5D&amp;originHeight=800&amp;originWidth=800&amp;size=0&amp;status=done&amp;style=none&amp;width=800" alt=""></p>
+<ul>
+<li>应用加锁：打开本应用，然后按底部菜单键，弹出后台运行的应用后，找到本应用，然后点击应用右上角的锁加锁</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/jpeg/667575/1610076462379-987e89d1-49c5-4860-a6f2-aa8c57a08b67.jpeg#align=left&amp;display=inline&amp;height=800&amp;margin=%5Bobject%20Object%5D&amp;originHeight=800&amp;originWidth=400&amp;size=0&amp;status=done&amp;style=none&amp;width=400" alt="">
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="oppo-coloros-">OPPO【 ColorOS 】</h3>
+<ul>
+<li>自启动管理：将应用加入【自启动管理】，具体流程，点击桌面上的“手机管家”-&gt;进入后，点击“权限隐私”-&gt;点击“自启动管理”-&gt;最后找到本应用，点击允许自启动</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/jpeg/667575/1610076462693-5ecf1e0a-c3f9-4618-a1c2-4a38127edd18.jpeg#align=left&amp;display=inline&amp;height=1400&amp;margin=%5Bobject%20Object%5D&amp;originHeight=1400&amp;originWidth=800&amp;size=0&amp;status=done&amp;style=none&amp;width=800" alt=""></p>
+<ul>
+<li>开启相应权限：应用运行需要相关权限</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/jpeg/667575/1610076462784-ebe6b72e-3d4b-4ea7-bf94-c5b1794d6fcb.jpeg#align=left&amp;display=inline&amp;height=700&amp;margin=%5Bobject%20Object%5D&amp;originHeight=700&amp;originWidth=800&amp;size=0&amp;status=done&amp;style=none&amp;width=800" alt=""></p>
+<ul>
+<li>允许通知：需要进入通知管理将本应用设置为允许通知，否则应用无法收到推送通知</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/jpeg/667575/1610076465176-4f4d0969-847e-4f43-8b76-38009a41dd9c.jpeg#align=left&amp;display=inline&amp;height=700&amp;margin=%5Bobject%20Object%5D&amp;originHeight=700&amp;originWidth=800&amp;size=0&amp;status=done&amp;style=none&amp;width=800" alt=""></p>
+<ul>
+<li>应用加锁：打开本应用，然后按底部菜单键，弹出后台运行的应用后，找到本应用，然后按住应用下滑加锁</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/jpeg/667575/1610076462490-a7b9fa5e-fd8c-41cc-94d8-0130295596a3.jpeg#align=left&amp;display=inline&amp;height=700&amp;margin=%5Bobject%20Object%5D&amp;originHeight=700&amp;originWidth=400&amp;size=0&amp;status=done&amp;style=none&amp;width=400" alt="">
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="heading"> </h3>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="三星-oneos-">三星【 OneOS 】</h3>
+<ul>
+<li>内存一键优化：需要将应用加入【白名单】列表，否则系统内存优化后，会杀掉应用进程</li>
+</ul>
+<p> </p>
+</div>
+
+  <div class="mdui-m-t-2">
+    
+    <a href="/tags/android" class="tag tag-color-0">
+      <i class="mdui-icon material-icons" style="margin-right: 3px; font-size: 1em;">loyalty</i>
+      android
+    </a>
+    
+    <a href="/tags/%e8%87%aa%e5%90%af%e5%8a%a8" class="tag tag-color-1">
+      <i class="mdui-icon material-icons" style="margin-right: 3px; font-size: 1em;">loyalty</i>
+      自启动
+    </a>
+    
+  </div>
+
+  <div class="direct">
+    
+    <span></span>
+    
+    
+    <span></span>
+    
+  </div>
+
+</div>
+
+<h2>评论</h2>
+<div>
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    
+    
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'cjlmonster';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+    </div>
+    
+<div class="mdui-dialog" id="dialog-docs-theme">
+	<div class="mdui-dialog-title">设置文档主题</div>
+	<div class="mdui-dialog-content">
+
+		<p class="mdui-typo-title">主题色</p>
+		<div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3">
+			<div class="mdui-col">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-layout" value="auto">
+					<i class="mdui-radio-icon"></i>
+					Auto
+				</label>
+			</div>
+			<div class="mdui-col">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-layout" value="light" checked="">
+					<i class="mdui-radio-icon"></i>
+					Light
+				</label>
+			</div>
+			<div class="mdui-col">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-layout" value="dark">
+					<i class="mdui-radio-icon"></i>
+					Dark
+				</label>
+			</div>
+		</div>
+
+		<p class="mdui-typo-title mdui-text-color-theme">主色</p>
+		<form class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3">
+			<div class="mdui-col mdui-text-color-amber">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="amber">
+					<i class="mdui-radio-icon"></i>
+					Amber
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-blue">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="blue">
+					<i class="mdui-radio-icon"></i>
+					Blue
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-blue-grey">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="blue-grey">
+					<i class="mdui-radio-icon"></i>
+					Blue Grey
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-brown">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="brown">
+					<i class="mdui-radio-icon"></i>
+					Brown
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-cyan">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="cyan">
+					<i class="mdui-radio-icon"></i>
+					Cyan
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-deep-orange">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="deep-orange">
+					<i class="mdui-radio-icon"></i>
+					Deep Orange
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-deep-purple">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="deep-purple">
+					<i class="mdui-radio-icon"></i>
+					Deep Purple
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-green">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="green">
+					<i class="mdui-radio-icon"></i>
+					Green
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-grey">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="grey">
+					<i class="mdui-radio-icon"></i>
+					Grey
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-indigo">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="indigo" checked="">
+					<i class="mdui-radio-icon"></i>
+					Indigo
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-light-blue">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="light-blue">
+					<i class="mdui-radio-icon"></i>
+					Light Blue
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-light-green">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="light-green">
+					<i class="mdui-radio-icon"></i>
+					Light Green
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-lime">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="lime">
+					<i class="mdui-radio-icon"></i>
+					Lime
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-orange">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="orange">
+					<i class="mdui-radio-icon"></i>
+					Orange
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-pink">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="pink">
+					<i class="mdui-radio-icon"></i>
+					Pink
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-purple">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="purple">
+					<i class="mdui-radio-icon"></i>
+					Purple
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-red">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="red">
+					<i class="mdui-radio-icon"></i>
+					Red
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-teal">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="teal">
+					<i class="mdui-radio-icon"></i>
+					Teal
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-yellow">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-primary" value="yellow">
+					<i class="mdui-radio-icon"></i>
+					Yellow
+				</label>
+			</div>
+		</form>
+
+		<p class="mdui-typo-title mdui-text-color-theme-accent">强调色</p>
+		<form class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3">
+			<div class="mdui-col mdui-text-color-amber">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="amber">
+					<i class="mdui-radio-icon"></i>
+					Amber
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-blue">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="blue">
+					<i class="mdui-radio-icon"></i>
+					Blue
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-cyan">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="cyan">
+					<i class="mdui-radio-icon"></i>
+					Cyan
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-deep-orange">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="deep-orange">
+					<i class="mdui-radio-icon"></i>
+					Deep Orange
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-deep-purple">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="deep-purple">
+					<i class="mdui-radio-icon"></i>
+					Deep Purple
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-green">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="green">
+					<i class="mdui-radio-icon"></i>
+					Green
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-indigo">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="indigo">
+					<i class="mdui-radio-icon"></i>
+					Indigo
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-light-blue">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="light-blue">
+					<i class="mdui-radio-icon"></i>
+					Light Blue
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-light-green">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="light-green">
+					<i class="mdui-radio-icon"></i>
+					Light Green
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-lime">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="lime">
+					<i class="mdui-radio-icon"></i>
+					Lime
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-orange">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="orange">
+					<i class="mdui-radio-icon"></i>
+					Orange
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-pink">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="pink" checked="">
+					<i class="mdui-radio-icon"></i>
+					Pink
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-purple">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="purple">
+					<i class="mdui-radio-icon"></i>
+					Purple
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-red">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="red">
+					<i class="mdui-radio-icon"></i>
+					Red
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-teal">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="teal">
+					<i class="mdui-radio-icon"></i>
+					Teal
+				</label>
+			</div>
+			<div class="mdui-col mdui-text-color-yellow">
+				<label class="mdui-radio mdui-m-b-1">
+					<input type="radio" name="doc-theme-accent" value="yellow">
+					<i class="mdui-radio-icon"></i>
+					Yellow
+				</label>
+			</div>
+		</form>
+
+	</div>
+	<div class="mdui-divider"></div>
+	<div class="mdui-dialog-actions">
+		<button class="mdui-btn mdui-ripple mdui-float-left" mdui-dialog-cancel="">恢复默认主题</button>
+		<button class="mdui-btn mdui-ripple" mdui-dialog-confirm="">ok</button>
+	</div>
+</div></body>
+
+</html>
