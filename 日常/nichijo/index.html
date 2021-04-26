@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="referrer" content="no-referrer">
 	<meta name="description" content="" />
 
 	<meta name="generator" content="Hugo 0.82.1" />
@@ -83,21 +84,22 @@
     <span class="mdui-m-r-3">预计阅读 1 分钟</span>
     <a href="/%e6%97%a5%e5%b8%b8" class="mdui-text-color-theme-a700 topic-tag">日常</a>
   </p>
-  <style>
-    div#blog p {
-      font-size: 0.90rem;
-    }
 
-    div#blog ul li {
-      font-size: 0.85rem;
-    }
-
-    div#blog code {
-      font-size: 0.85rem;
-    }
-  </style>
   <div id="blog"><h1 id="日常茶飯事">日常茶飯事</h1>
 </div>
+
+  <script>
+    $(function() {
+      $('div#blog table').each(function(index, element) {
+        let table = $(element).clone()
+        table.addClass('mdui-table').addClass('mdui-table-hoverable')
+        let div = document.createElement('div')
+        $(div).addClass('mdui-table-fluid').addClass('mdui-m-b-3').append(table)
+        let node = $(element).replaceWith(div)
+        console.log(node[0])
+      })
+    })
+  </script>
 
   <div class="mdui-m-t-2">
     

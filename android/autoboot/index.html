@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="referrer" content="no-referrer">
 	<meta name="description" content="" />
 
 	<meta name="generator" content="Hugo 0.82.1" />
@@ -83,19 +84,7 @@
     <span class="mdui-m-r-3">预计阅读 1 分钟</span>
     <a href="/android" class="mdui-text-color-theme-a700 topic-tag">Android</a>
   </p>
-  <style>
-    div#blog p {
-      font-size: 0.90rem;
-    }
 
-    div#blog ul li {
-      font-size: 0.85rem;
-    }
-
-    div#blog code {
-      font-size: 0.85rem;
-    }
-  </style>
   <div id="blog"><p>       由于第三方系统为了省电处理，关闭应用的自启动操作，导致应用经常收不到推送的消息或不及时，所以为了提高第三方系统的推送及时性，这里建议用户按以下操作，对应自己手机的系统类别，手动开启本应用的自启动选项和相关有助于提高推送到达率的设置。</p>
 <hr>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
@@ -186,6 +175,19 @@
 </ul>
 <p> </p>
 </div>
+
+  <script>
+    $(function() {
+      $('div#blog table').each(function(index, element) {
+        let table = $(element).clone()
+        table.addClass('mdui-table').addClass('mdui-table-hoverable')
+        let div = document.createElement('div')
+        $(div).addClass('mdui-table-fluid').addClass('mdui-m-b-3').append(table)
+        let node = $(element).replaceWith(div)
+        console.log(node[0])
+      })
+    })
+  </script>
 
   <div class="mdui-m-t-2">
     
