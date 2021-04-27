@@ -1,3 +1,7 @@
+/* body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, sans-serif;
+} */
+
 /* 文档最外层 */
 .doc-container {
   padding-top: 10px;
@@ -30,14 +34,14 @@ div.break-text {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
-  font-size: 1.15em;
+  font-size: 0.9rem;
 }
 
 .tag {
   border-radius: 6px;
   color: #e8e8e8;
   padding: 5px 8px;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   background-color: brown;
   margin-right: 8px;
   transition: border-radius .3s, color .3s;
@@ -156,7 +160,7 @@ div.top-container {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: flex-start; 
   overflow: hidden;
 }
 
