@@ -49,8 +49,8 @@
         class="mdui-icon material-icons">color_lens</i></span>
   </div>
 </header>
-<div class="mdui-drawer" id="main-drawer">
-	<div class="mdui-list" style="margin-bottom: 76px;">
+<div class="mdui-drawer mdui-shadow-10" id="main-drawer" style="display: flex;flex-direction: column; justify-content: space-between;">
+	<div class="mdui-list">
 		
 		<a href="/" class="mdui-list-item mdui-ripple">
 			<i class="mdui-list-item-icon mdui-icon material-icons">home</i>
@@ -73,6 +73,47 @@
 		</a>
 		
 	</div>
+	<div class="top-container">
+		<h4 class="mdui-text-color-theme-a400 mdui-text-center">标签云</h4>
+		<div class="mdui-divider" style="margin: 0 10px;"></div>
+		<div class="tab-box">
+				
+				
+				
+				<a href="https://cjlmonster.github.io/tags/android" class="ytab ytag-color-0">
+					android 
+					<span>(1)</span>
+				</a>
+				
+				
+				<a href="https://cjlmonster.github.io/tags/hyde" class="ytab ytag-color-1">
+					hyde 
+					<span>(1)</span>
+				</a>
+				
+				
+				<a href="https://cjlmonster.github.io/tags/%e4%b8%bb%e9%a2%98" class="ytab ytag-color-2">
+					主题 
+					<span>(1)</span>
+				</a>
+				
+				
+				<a href="https://cjlmonster.github.io/tags/%e6%97%a5%e5%b8%b8" class="ytab ytag-color-3">
+					日常 
+					<span>(1)</span>
+				</a>
+				
+				
+				<a href="https://cjlmonster.github.io/tags/%e8%87%aa%e5%90%af%e5%8a%a8" class="ytab ytag-color-4">
+					自启动 
+					<span>(1)</span>
+				</a>
+				
+				
+
+				
+		</div>
+	</div>
 </div>
 <div class="mdui-container doc-container" style="height: auto !important;"><div>
 
@@ -90,13 +131,20 @@
 
   <script>
     $(function() {
-      $('div#blog table').each(function(index, element) {
-        let table = $(element).clone()
-        table.addClass('mdui-table').addClass('mdui-table-hoverable')
+      
+      
+      
+      
+      
+      
+      
+      
+      $('div#blog table').each(function(index, table) {
+        $(table).addClass('mdui-table').addClass('mdui-table-hoverable')
         let div = document.createElement('div')
-        $(div).addClass('mdui-table-fluid').addClass('mdui-m-b-3').append(table)
-        let node = $(element).replaceWith(div)
-        console.log(node[0])
+        $(div).addClass('mdui-table-fluid').addClass('mdui-m-b-3')
+        $(div).insertBefore(table).append(table)
+        console.log(div)
       })
     })
   </script>
@@ -110,12 +158,25 @@
     
   </div>
 
-  <div class="direct">
+  <div class="direct mdui-hidden-sm-down">
     
     <a href="/%E6%97%A5%E5%B8%B8/hyde/" class="mdui-text-color-theme-text">
       <i class="mdui-icon material-icons">chevron_left</i>
-      <span class="mdui-hidden-sm-down">Hyde主题使用教程</span>
-      <span class="mdui-hidden-md-up">上一篇</span>
+      <span>上一篇 - Hyde主题使用教程</span>
+      
+    </a>
+    
+    
+    <span></span>
+    
+  </div>
+
+  <div class="direct2 mdui-hidden-md-up">
+    
+    <a href="/%E6%97%A5%E5%B8%B8/hyde/" class="mdui-text-color-theme-text">
+      <i class="mdui-icon material-icons">chevron_left</i>
+      <span>上一篇 - Hyde主题使用教程</span>
+      
     </a>
     
     
