@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>标签 on Hyou</title>
+    <link>https://cjlmonster.github.io/tags/</link>
+    <description>Recent content in 标签 on Hyou</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 25 Apr 2021 12:42:17 +0800</lastBuildDate><atom:link href="https://cjlmonster.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>android</title>
+      <link>https://cjlmonster.github.io/tags/android/</link>
+      <pubDate>Mon, 26 Apr 2021 16:51:38 +0800</pubDate>
+      
+      <guid>https://cjlmonster.github.io/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>自启动</title>
+      <link>https://cjlmonster.github.io/tags/%E8%87%AA%E5%90%AF%E5%8A%A8/</link>
+      <pubDate>Mon, 26 Apr 2021 16:51:38 +0800</pubDate>
+      
+      <guid>https://cjlmonster.github.io/tags/%E8%87%AA%E5%90%AF%E5%8A%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hyde</title>
+      <link>https://cjlmonster.github.io/tags/hyde/</link>
+      <pubDate>Fri, 23 Apr 2021 22:57:48 +0800</pubDate>
+      
+      <guid>https://cjlmonster.github.io/tags/hyde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>主题</title>
+      <link>https://cjlmonster.github.io/tags/%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Fri, 23 Apr 2021 22:57:48 +0800</pubDate>
+      
+      <guid>https://cjlmonster.github.io/tags/%E4%B8%BB%E9%A2%98/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
