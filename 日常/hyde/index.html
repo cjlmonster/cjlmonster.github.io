@@ -491,26 +491,24 @@ $ git clone https://github.com/spf13/hyde.git
 <h2>评论</h2>
 <div>
   
-  <link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
-<script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
-<div id="gitalk-container"></div>
+(function() {
+    
+    
+    
+    
 
-<script>
-    var gitalk = new Gitalk({
-        clientID: '24ea1fb032d20cc00351', 
-        clientSecret: '42ab03ec4a326347a4f5448f5bef7d9651599652', 
-        repo: 'cjlmonster.github.io',      
-        owner: 'cjlmonster',          
-        admin: ['cjlmonster'],        
-        id: location.pathname,      
-        title: document.title, 
-        
-        
-    })
-
-    gitalk.render('gitalk-container');
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'cjlmonster';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
 </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
 </div>
     </div>
 <div class="mdui-container mdui-m-y-1">
